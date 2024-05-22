@@ -1,4 +1,4 @@
-import { IoStar } from "react-icons/io5";
+import { IoStarOutline } from "react-icons/io5";
 
 export const navbar = [
   {
@@ -64,7 +64,7 @@ export const feateures = [
     category: "Womens",
     title: "Shop",
     short_description: "Lorem ipsum dolor",
-    rating: Array(5).fill({ icon: <IoStar /> }),
+    rating: Array(5).fill({ icon: <IoStarOutline /> }),
     price: "129.00",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elitLorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elit",
@@ -77,7 +77,7 @@ export const feateures = [
     category: "Kids",
     title: "Shop",
     short_description: "Lorem ipsum dolor",
-    rating: Array(5).fill({ icon: <IoStar /> }),
+    rating: Array(5).fill({ icon: <IoStarOutline /> }),
     price: "129.00",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elitLorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elit",
@@ -87,10 +87,10 @@ export const feateures = [
     img: "../images/white_back.jpg",
     tag: "new",
     btn: "Select Options",
-    category: "Mens",
+    category: "Womens",
     title: "Shop",
     short_description: "Lorem ipsum dolor",
-    rating: Array(5).fill({ icon: <IoStar /> }),
+    rating: Array(5).fill({ icon: <IoStarOutline /> }),
     price: "129.00",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elitLorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elit",
@@ -103,7 +103,7 @@ export const feateures = [
     category: "Womens",
     title: "Shop",
     short_description: "Lorem ipsum dolor",
-    rating: Array(5).fill({ icon: <IoStar /> }),
+    rating: Array(5).fill({ icon: <IoStarOutline /> }),
     price: "129.00",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elitLorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elit",
@@ -116,7 +116,7 @@ export const feateures = [
     category: "Womens",
     title: "Shop",
     short_description: "Lorem ipsum dolor",
-    rating: Array(5).fill({ icon: <IoStar /> }),
+    rating: Array(5).fill({ icon: <IoStarOutline /> }),
     price: "129.00",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elitLorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elit",
@@ -129,7 +129,7 @@ export const feateures = [
     category: "Womens",
     title: "Shop",
     short_description: "Lorem ipsum dolor",
-    rating: Array(5).fill({ icon: <IoStar /> }),
+    rating: Array(5).fill({ icon: <IoStarOutline /> }),
     price: "129.00",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elitLorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elit",
@@ -143,7 +143,7 @@ export const feateures = [
     category: "Womens",
     title: "Kurti",
     short_description: "Lorem ipsum dolor",
-    rating: Array(5).fill({ icon: <IoStar /> }),
+    rating: Array(5).fill({ icon: <IoStarOutline /> }),
     price: "129.00",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elitLorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elit",
@@ -156,7 +156,7 @@ export const feateures = [
     category: "Womens",
     title: "Kurti",
     short_description: "Lorem ipsum dolor",
-    rating: Array(5).fill({ icon: <IoStar /> }),
+    rating: Array(5).fill({ icon: <IoStarOutline /> }),
     price: "129.00",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elitLorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elit",
@@ -169,12 +169,76 @@ export const feateures = [
     category: "Womens",
     title: "Kurti",
     short_description: "Lorem ipsum dolor",
-    rating: Array(5).fill({ icon: <IoStar /> }),
+    rating: Array(5).fill({ icon: <IoStarOutline /> }),
     price: "129.00",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elitLorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elit",
   },
-  
+  {
+    id: 10,
+    img: "../images/men.jpg",
+    tag: "new",
+    btn: "Select Options",
+    category: "Mens",
+    title: "Kurti",
+    short_description: "Lorem ipsum dolor",
+    rating: Array(5).fill({ icon: <IoStarOutline /> }),
+    price: "129.00",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elitLorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elit",
+  },
+  {
+    id: 11,
+    img: "../images/men.jpg",
+    tag: "new",
+    btn: "Select Options",
+    category: "Mens",
+    title: "Kurti",
+    short_description: "Lorem ipsum dolor",
+    rating: Array(5).fill({ icon: <IoStarOutline /> }),
+    price: "129.00",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elitLorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elit",
+  },
+  {
+    id: 12,
+    img: "../images/men.jpg",
+    tag: "new",
+    btn: "Select Options",
+    category: "Mens",
+    title: "Kurti",
+    short_description: "Lorem ipsum dolor",
+    rating: Array(5).fill({ icon: <IoStarOutline /> }),
+    price: "129.00",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elitLorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elit",
+  },
+  {
+    id: 13,
+    img: "../images/men.jpg",
+    tag: "new",
+    btn: "Select Options",
+    category: "Mens",
+    title: "Kurti",
+    short_description: "Lorem ipsum dolor",
+    rating: Array(5).fill({ icon: <IoStarOutline /> }),
+    price: "129.00",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elitLorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elit",
+  },
+  {
+    id: 1,
+    img: "../images/men.jpg",
+    tag: "new",
+    btn: "Select Options",
+    category: "Mens",
+    title: "Kurti",
+    short_description: "Lorem ipsum dolor",
+    rating: Array(5).fill({ icon: <IoStarOutline /> }),
+    price: "129.00",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elitLorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elit",
+  },
 ];
 
 export const reviews = [
