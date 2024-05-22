@@ -1,13 +1,28 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-import "./App.css";
-import Shop from "./pages/Shop";
+import {
+  Home,
+  Shop,
+  Cart,
+  Header,
+  Footer,
+  Contact,
+  NotFoundPage,
+} from "./pages/index";
 
 function App() {
   return (
     <div>
-      <Routes>
-        <Route path="/shop" element={<Shop />} />
-      </Routes>
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/*" element={<NotFoundPage />} />
+        </Routes>
+        <Footer />
+      </Router>
     </div>
   );
 }
