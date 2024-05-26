@@ -22,7 +22,7 @@ const Shop = () => {
 
   return (
     <div>
-      <PageHeading home={"Home"} pagename={"Shop"} />
+      {/* <PageHeading home={"Home"} pagename={"Shop"} /> */}
       <div className="w-10/12 m-auto">
         <div className="flex justify-center mb-8">
           <button
@@ -68,12 +68,7 @@ const Shop = () => {
                     </p>
                   </div>
                   <div className="hidden absolute bg-white top-0 right-0 p-4 m-4">
-                    {/* <div className="mb-4">
-                      <BiGitCompare />
-                    </div>
-                    <div className="mb-4">
-                      <BiSearch />
-                    </div> */}
+                    
                     <div>
                       <BiHeart />
                     </div>

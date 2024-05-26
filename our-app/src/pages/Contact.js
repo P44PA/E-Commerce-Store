@@ -14,7 +14,7 @@ const Contact = () => {
 
   return ( 
     <div >
-      <PageHeading home={"Home"} pagename={"Contact"} />
+      {/* <PageHeading home={"Home"} pagename={"Contact"} /> */}
       <div className="text-center justify-center "> 
 
             <div className="contact-form">
