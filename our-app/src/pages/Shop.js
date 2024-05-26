@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { feateures } from "../data/Data";
-import { BiCart, BiGitCompare, BiHeart, BiSearch } from "react-icons/bi";
+import { BiCart, BiHeart } from "react-icons/bi";
 import { Model } from "../common/Model";
 import PageHeading from "../common/PageHeading";
 
@@ -68,12 +68,12 @@ const Shop = () => {
                     </p>
                   </div>
                   <div className="hidden absolute bg-white top-0 right-0 p-4 m-4">
-                    <div className="mb-4">
+                    {/* <div className="mb-4">
                       <BiGitCompare />
                     </div>
                     <div className="mb-4">
                       <BiSearch />
-                    </div>
+                    </div> */}
                     <div>
                       <BiHeart />
                     </div>

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Slider from "react-slick";
 import { feateures } from "../data/Data";
 import { Heading } from "../common/Heading";
-import { BiCart, BiGitCompare, BiHeart, BiSearch } from "react-icons/bi";
+import { BiCart, BiHeart } from "react-icons/bi";
 import { Model } from "../common/Model";
 
 export const BestSeller = () => {
@@ -65,12 +65,6 @@ export const BestSeller = () => {
                     </p>
                   </div>
                   <div className="hidden absolute bg-white top-0 right-0 p-4 m-4">
-                    <div className="mb-4">
-                      <BiGitCompare />
-                    </div>
-                    <div className="mb-4">
-                      <BiSearch />
-                    </div>
                     <div>
                       <BiHeart />
                     </div>
