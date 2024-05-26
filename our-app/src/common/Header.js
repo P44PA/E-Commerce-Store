@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { navbar } from "../data/Data";
 import { BiShoppingBag } from "react-icons/bi";
 import Sidebar from "./Sidebar";
 import { useSelector } from "react-redux";
 import SearchComponent from "../components/SearchComponent";
-
 
 const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
@@ -13,6 +12,8 @@ const Header = () => {
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
+
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -31,15 +32,18 @@ const Header = () => {
     <>
       <div className={`${isSticky ? "sticky top-0 z-50 bg-white shadow-xl" : ""}`}>
         <div className="flex flex-wrap justify-between pt-3 pb-3 w-10/12 m-auto items-center">
-        <Link to="/">
-          <div className="logo">
-            <img src="./images/logo.png" alt="logo" />
-          </div>
+          <Link to="/">
+            <div className="logo">
+              <img src="./images/logo.png" alt="logo" />
+            </div>
           </Link>
           <ul className="flex flex-wrap text-base font-medium uppercase items-center">
             {navbar.map((nav, index) => (
               <li className="mr-5" key={index}>
-                <Link className="hover:text-red-600" to={nav.path}>
+                <Link
+                  className={`hover:text-red-600 ${location.pathname === nav.path ? "text-red-600" : ""}`}
+                  to={nav.path}
+                >
                   {nav.nav}
                 </Link>
               </li>
@@ -54,8 +58,8 @@ const Header = () => {
               </Link>
               <div className="items_count">
                 <span className="text-white">
-                {totalItems}
-              </span>
+                  {totalItems}
+                </span>
               </div>
             </div>
           </div>

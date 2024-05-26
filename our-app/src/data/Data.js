@@ -19,11 +19,6 @@ export const navbar = [
   },
   {
     id: 4,
-    path: "/cart",
-    nav: "Cart",
-  },
-  {
-    id: 5,
     path: "/contact",
     nav: "Contact",
   },
