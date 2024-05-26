@@ -1,4 +1,5 @@
-import { IoStarOutline } from "react-icons/io5";
+
+import { IoStar } from "react-icons/io5";
 
 export const navbar = [
   {
@@ -64,7 +65,7 @@ export const feateures = [
     category: "Womens",
     title: "Shop",
     short_description: "Goca 1",
-    rating: Array(5).fill({ icon: <IoStarOutline /> }),
+    rating: Array(5).fill({ icon: <IoStar /> }),
     price: "129.00",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elitLorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elit",
@@ -77,7 +78,7 @@ export const feateures = [
     category: "Kids",
     title: "Shop",
     short_description: "Goca 2",
-    rating: Array(5).fill({ icon: <IoStarOutline /> }),
+    rating: Array(5).fill({ icon: <IoStar /> }),
     price: "129.00",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elitLorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elit",
@@ -90,7 +91,7 @@ export const feateures = [
     category: "Womens",
     title: "Shop",
     short_description: "Goca 3",
-    rating: Array(5).fill({ icon: <IoStarOutline /> }),
+    rating: Array(5).fill({ icon: <IoStar /> }),
     price: "129.00",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elitLorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elit",
@@ -103,7 +104,7 @@ export const feateures = [
     category: "Womens",
     title: "Shop",
     short_description: "Goca 4",
-    rating: Array(5).fill({ icon: <IoStarOutline /> }),
+    rating: Array(5).fill({ icon: <IoStar /> }),
     price: "129.00",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elitLorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elit",
@@ -116,7 +117,7 @@ export const feateures = [
     category: "Womens",
     title: "Shop",
     short_description: "Goca 5",
-    rating: Array(5).fill({ icon: <IoStarOutline /> }),
+    rating: Array(5).fill({ icon: <IoStar /> }),
     price: "129.00",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elitLorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elit",
@@ -129,7 +130,7 @@ export const feateures = [
     category: "Womens",
     title: "Shop",
     short_description: "Goca 6",
-    rating: Array(5).fill({ icon: <IoStarOutline /> }),
+    rating: Array(5).fill({ icon: <IoStar /> }),
     price: "129.00",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elitLorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elit",
@@ -143,7 +144,7 @@ export const feateures = [
     category: "Womens",
     title: "Kurti",
     short_description: "Goca 7",
-    rating: Array(5).fill({ icon: <IoStarOutline /> }),
+    rating: Array(5).fill({ icon: <IoStar /> }),
     price: "129.00",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elitLorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elit",
@@ -156,7 +157,7 @@ export const feateures = [
     category: "Womens",
     title: "Kurti",
     short_description: "Goca 8",
-    rating: Array(5).fill({ icon: <IoStarOutline /> }),
+    rating: Array(5).fill({ icon: <IoStar /> }),
     price: "129.00",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elitLorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elit",
@@ -169,7 +170,7 @@ export const feateures = [
     category: "Womens",
     title: "Kurti",
     short_description: "Goca 9",
-    rating: Array(5).fill({ icon: <IoStarOutline /> }),
+    rating: Array(5).fill({ icon: <IoStar /> }),
     price: "129.00",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elitLorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elit",
@@ -182,7 +183,7 @@ export const feateures = [
     category: "Mens",
     title: "Kurti",
     short_description: "Cuni 1",
-    rating: Array(5).fill({ icon: <IoStarOutline /> }),
+    rating: Array(5).fill({ icon: <IoStar /> }),
     price: "129.00",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elitLorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elit",
@@ -195,7 +196,7 @@ export const feateures = [
     category: "Mens",
     title: "Kurti",
     short_description: "Cuni 2",
-    rating: Array(5).fill({ icon: <IoStarOutline /> }),
+    rating: Array(5).fill({ icon: <IoStar /> }),
     price: "129.00",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elitLorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elit",
@@ -208,7 +209,7 @@ export const feateures = [
     category: "Mens",
     title: "Kurti",
     short_description: "Cuni 3",
-    rating: Array(5).fill({ icon: <IoStarOutline /> }),
+    rating: Array(5).fill({ icon: <IoStar /> }),
     price: "129.00",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elitLorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elit",
@@ -221,7 +222,7 @@ export const feateures = [
     category: "Mens",
     title: "Kurti",
     short_description: "Cuni 4",
-    rating: Array(5).fill({ icon: <IoStarOutline /> }),
+    rating: Array(5).fill({ icon: <IoStar /> }),
     price: "129.00",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elitLorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elit",
@@ -234,7 +235,7 @@ export const feateures = [
     category: "Mens",
     title: "Kurti",
     short_description: "Cuni 5",
-    rating: Array(5).fill({ icon: <IoStarOutline /> }),
+    rating: Array(5).fill({ icon: <IoStar /> }),
     price: "129.00",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elitLorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elit",

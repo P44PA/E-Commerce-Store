@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { BiChevronRight, BiChevronLeft } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 const Banner = () => {
   var settings = {
@@ -27,9 +28,11 @@ const Banner = () => {
               <div className="banner-items">
                 <h2>Men Collections</h2>
                 <h1>Get Up to 50% Off Select Styles.</h1>
+                <Link to="/shop">
                 <button type="button" className="mt-4 btn pt-3 pb-3 pr-6 pl-6">
                   Shop Now
                 </button>
+                </Link>
               </div>
             </div>
           ))}
