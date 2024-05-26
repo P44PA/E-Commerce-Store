@@ -30,7 +30,9 @@ const Header = () => {
 
   return (
     <>
-      <div className={`${isSticky ? "sticky top-0 z-50 bg-white shadow-xl" : ""}`}>
+      <div
+        className={`${isSticky ? "sticky top-0 z-50 bg-white shadow-xl" : ""}`}
+      >
         <div className="flex flex-wrap justify-between pt-3 pb-3 w-10/12 m-auto items-center">
           <Link to="/">
             <div className="logo">
@@ -41,7 +43,9 @@ const Header = () => {
             {navbar.map((nav, index) => (
               <li className="mr-5" key={index}>
                 <Link
-                  className={`hover:text-red-600 ${location.pathname === nav.path ? "text-red-600" : ""}`}
+                  className={`hover:text-red-600 ${
+                    location.pathname === nav.path ? "text-red-600" : ""
+                  }`}
                   to={nav.path}
                 >
                   {nav.nav}
@@ -57,9 +61,7 @@ const Header = () => {
                 <BiShoppingBag className="text-3xl" />
               </Link>
               <div className="items_count">
-                <span className="text-white">
-                  {totalItems}
-                </span>
+                <span className="text-white">{totalItems}</span>
               </div>
             </div>
           </div>

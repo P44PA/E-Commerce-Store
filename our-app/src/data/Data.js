@@ -1,4 +1,3 @@
-
 import { IoStar } from "react-icons/io5";
 
 export const navbar = [
@@ -21,6 +20,11 @@ export const navbar = [
     id: 4,
     path: "/contact",
     nav: "Contact",
+  },
+  {
+    id: 5,
+    path: "/favorites",
+    nav: "Favorites",
   },
 ];
 
@@ -320,16 +324,17 @@ export const blogs = [
 export const footer = [
   {
     id: 2,
-    header:" ",
+    header: " ",
     content1: "Customer Service",
     content2: "Have questions or need assistance?",
     content3: "Reach out to our friendly customer service team here.",
-    content4: "Shipping & Returns: Learn about our fast shipping options and easy return policy here.",
+    content4:
+      "Shipping & Returns: Learn about our fast shipping options and easy return policy here.",
     content5: "FAQ: Find answers to common questions here.",
   },
   {
     id: 3,
-    header:" ",
+    header: " ",
     content1: "Stay Connected",
     content2: "Newsletter: Sign up for our newsletter ",
     content3: "to get the latest updates on new arrivals,",
@@ -337,7 +342,7 @@ export const footer = [
   },
   {
     id: 4,
-    header:" ",
+    header: " ",
     content1: "Privacy Policy",
     content2: "Understand our terms and conditions here.",
     content3: "Your privacy is important to us. Read our privacy policy ",

@@ -3,10 +3,12 @@ import { feateures } from "../data/Data";
 import { BiCart, BiHeart } from "react-icons/bi";
 import { Model } from "../common/Model";
 import PageHeading from "../common/PageHeading";
+import { useFavorites } from "./FavoritesContext"; // Import the useFavorites hook
 
 const Shop = () => {
   const [isModalOpen, setIsModalOpen] = useState(null);
   const [category, setCategory] = useState("Womens"); // Default category
+  const { favorites, toggleFavorite } = useFavorites(); // Use favorites context
 
   const handleOpen = (productid) => {
     setIsModalOpen(productid);
@@ -67,11 +69,17 @@ const Shop = () => {
                       {val.tag}
                     </p>
                   </div>
-                  <div className="hidden absolute bg-white top-0 right-0 p-4 m-4">
-                    
-                    <div>
-                      <BiHeart />
-                    </div>
+                  <div
+                    className="absolute top-0 right-0 p-4 m-4 cursor-pointer"
+                    onClick={() => toggleFavorite(val.id)} // Use the toggleFavorite from context
+                  >
+                    <BiHeart
+                      className={`text-2xl ${
+                        favorites.includes(val.id)
+                          ? "text-red-500"
+                          : "text-gray-500"
+                      }`}
+                    />
                   </div>
                 </div>
                 <div className="product-details text-center mt-2">

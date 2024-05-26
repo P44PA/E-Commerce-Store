@@ -8,20 +8,26 @@ import {
   Contact,
   NotFoundPage,
 } from "./pages/index";
+import Favorites from "./pages/Favorites"; // Import the Favorites page
+import { FavoritesProvider } from "./pages/FavoritesContext"; // Adjust the import path
 
 function App() {
   return (
     <div>
       <Router>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/shop" element={<Shop />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/*" element={<NotFoundPage />} />
-        </Routes>
-        <Footer />
+        <FavoritesProvider>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/shop" element={<Shop />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/favorites" element={<Favorites />} />{" "}
+            {/* Add the new route */}
+            <Route path="/*" element={<NotFoundPage />} />
+          </Routes>
+          <Footer />
+        </FavoritesProvider>
       </Router>
     </div>
   );
