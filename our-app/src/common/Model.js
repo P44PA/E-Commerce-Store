@@ -114,20 +114,20 @@ export const Model = ({ isModalOpen, data, handleClose }) => {
                   <p className="text-green-700">In Stock 300 Items</p>
                   <div className="flex items-center">
                     <div className="flex mr-3">
-                      <button
+                    <button
                         className="border mt-4 pt-3 pb-3 pr-6 pl-6"
-                        onClick={() => increaseQuantity(data.id, qty)}
+                        onClick={() => decreaseQuantity(data.id, qty)}
                       >
-                        <PiPlus />
+                        <PiMinus />
                       </button>
                       <span className="border mt-4 pt-3 pb-3 pr-6 pl-6 count">
                         {qty || 1}
                       </span>
                       <button
                         className="border mt-4 pt-3 pb-3 pr-6 pl-6"
-                        onClick={() => decreaseQuantity(data.id, qty)}
+                        onClick={() => increaseQuantity(data.id, qty)}
                       >
-                        <PiMinus />
+                        <PiPlus />
                       </button>
                     </div>
                     <div className="addtocart mr-3">
