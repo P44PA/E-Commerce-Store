@@ -1,5 +1,5 @@
 import React from "react";
-
+import {Link} from 'react-router-dom'
 export const NewDesignCover = () => {
   return (
     <div className="bg-design-cover">
@@ -9,10 +9,12 @@ export const NewDesignCover = () => {
         <p className="">
           Welcome to the home of women's fashion clothing & accessories at Italy
         </p>
-
+        <Link to='/shop'>
         <button type="button" className="mt-4 btn pt-3 pb-3 pr-6 pl-6">
           Shop Now
         </button>
+        </Link>
+        
       </div>
     </div>
   );

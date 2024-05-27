@@ -1,5 +1,15 @@
 import { IoStar } from "react-icons/io5";
 
+const today = new Date
+const today_date = today.getDate()
+const month = today.getMonth()
+const monthNames = [
+  'January', 'February', 'March', 'April', 'May', 'June',
+  'July', 'August', 'September', 'October', 'November', 'December'
+];
+
+const fulltag = `${today_date}  ${monthNames[month]}`
+
 export const navbar = [
   {
     id: 1,
@@ -284,28 +294,28 @@ export const reviews = [
   {
     title: "Customer Review",
     description:
-      "a spoken or written account of a person, object, or event.people who had seen him were able to give a description",
+      "High-quality clothing at reasonable prices. I love the variety and the fast shipping. Highly recommend!",
     customer_img: "../images/testi1.jpg",
-    customer_name: "John Smith",
-    position: "Online Marketer",
+    customer_name: "Emily Thompson",
+    position: "Graphics Design",
   },
 
   {
     title: "Customer Review",
     description:
-      "a spoken or written account of a person, object, or event.people who had seen him were able to give a description",
+      "Amazing selection of trendy and stylish clothes. The website is easy to navigate, and the customer service is top-notch.",
     customer_img: "../images/testi2.jpg",
-    customer_name: "John Smith",
-    position: "Online Marketer",
+    customer_name: "Isabella Brown",
+    position: "Lawyer",
   },
 
   {
     title: "Customer Review",
     description:
-      "a spoken or written account of a person, object, or event.people who had seen him were able to give a description",
+      "A fantastic online shopping experience. The clothes are exactly as pictured, and the fit is perfect. Great return policy too.",
     customer_img: "../images/testi3.jpg",
-    customer_name: "John Smith",
-    position: "Online Marketer",
+    customer_name: "Ethan Davis",
+    position: "Architect",
   },
 ];
 
@@ -313,7 +323,7 @@ export const blogs = [
   {
     id: 1,
     img: "../images/10-home_default.jpg",
-    tag: "8 May",
+    tag: fulltag,
     title: "Shop",
     short_description: "Lorem ipsum dolor",
     read_more: "Read More",
@@ -321,7 +331,7 @@ export const blogs = [
   {
     id: 2,
     img: "../images/11-home_default.jpg",
-    tag: "8 May",
+    tag: fulltag,
     title: "Shop",
     short_description: "Lorem ipsum dolor",
     read_more: "Read More",
@@ -329,7 +339,7 @@ export const blogs = [
   {
     id: 3,
     img: "../images/12-home_default.jpg",
-    tag: "8 May",
+    tag: fulltag,
     title: "Shop",
     short_description: "Lorem ipsum dolor",
     read_more: "Read More",
@@ -337,7 +347,7 @@ export const blogs = [
   {
     id: 4,
     img: "../images/13-home_default.jpg",
-    tag: "8 May",
+    tag: fulltag,
     title: "Shop",
     short_description: "Lorem ipsum dolor",
     read_more: "Read More",
@@ -345,7 +355,7 @@ export const blogs = [
   {
     id: 5,
     img: "../images/kurti.jpg",
-    tag: "8 May",
+    tag: fulltag,
     title: "Shop",
     short_description: "Lorem ipsum dolor",
     read_more: "Read More",
@@ -353,7 +363,7 @@ export const blogs = [
   {
     id: 6,
     img: "../images/14-home_default.jpg",
-    tag: "8 May",
+    tag: fulltag,
     title: "Shop",
     short_description: "Lorem ipsum dolor",
     read_more: "Read More",
