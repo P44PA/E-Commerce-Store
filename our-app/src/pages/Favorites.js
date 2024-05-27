@@ -16,7 +16,13 @@ const Favorites = () => {
     <div className="w-10/12 m-auto">
       <h2 className="text-4xl my-4 text-center text-red-600">Your Favorites</h2>
       {favoriteProducts.length === 0 ? (
-        <div className="flex justify-center items-center m-10">
+        <>
+
+      <div className="text-center text-4xl  m-10">
+        <p>There are no favorite Products!</p>
+      </div>
+
+          <div className="flex justify-center items-center m-10">
           <img
             src="../images\NothinHere.png"
             className="flex justify-center items-center m-10"
@@ -25,6 +31,9 @@ const Favorites = () => {
             alt="nothing"
           ></img>
         </div>
+        
+        </>
+
       ) : (
         <div className="grid grid-cols-4 gap-8">
           {favoriteProducts.map((product) => (

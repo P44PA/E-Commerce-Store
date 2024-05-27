@@ -28,9 +28,23 @@ const Sidebar = ({ isSidebarOpen, closeSidebar }) => {
             </span>
 
             {cartProducts.length === 0 ? (
-              <p className="text-3xl font-bold capitalize">
-                Your cart has no products.
-              </p>
+              <>
+
+              <div className="text-center text-4xl  m-10">
+                <p>Your cart has no products.</p>
+              </div>
+        
+                  <div className="flex justify-center items-center m-10">
+                  <img
+                    src="../images\NothinHere.png"
+                    className="flex justify-center items-center m-10"
+                    width={400}
+                    height={400}
+                    alt="nothing"
+                  ></img>
+                </div>
+                
+                </>
             ) : (
               <>
                 {cartProducts.map((item, key) => (
