@@ -379,32 +379,3 @@ export const blogs = [
     read_more: "Read More",
   },
 ];
-
-export const footer = [
-  {
-    id: 2,
-    header: " ",
-    content1: "Customer Service",
-    content2: "Have questions or need assistance?",
-    content3: "Reach out to our friendly customer service team here.",
-    content4:
-      "Shipping & Returns: Learn about our fast shipping options and easy return policy here.",
-    content5: "FAQ: Find answers to common questions here.",
-  },
-  {
-    id: 3,
-    header: " ",
-    content1: "Stay Connected",
-    content2: "Newsletter: Sign up for our newsletter ",
-    content3: "to get the latest updates on new arrivals,",
-    content4: "exclusive offers, and fashion tips.",
-  },
-  {
-    id: 4,
-    header: " ",
-    content1: "Privacy Policy",
-    content2: "Understand our terms and conditions here.",
-    content3: "Your privacy is important to us. Read our privacy policy ",
-    content4: "Understand our terms and conditions here.",
-  },
-];
