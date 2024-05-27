@@ -63,15 +63,15 @@ export const banners = [
 export const bannar_down = [
   {
     img: "../images/MEN.jpg",
-    name: "MEN",
+    name: "Mens",
   },
   {
     img: "../images/WOMEN.jpg",
-    name: "WOMEN",
+    name: "Womens",
   },
   {
     img: "../images/ACCESSORIES.jpg",
-    name: "ACCESSORIES",
+    name: "Womens",
   },
 ];
 

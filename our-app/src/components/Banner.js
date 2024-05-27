@@ -18,6 +18,7 @@ const Banner = () => {
     nextArrow: <BiChevronRight />,
     prevArrow: <BiChevronLeft />,
   };
+
   return (
     <div>
       <div className="w-10/12 m-auto">
@@ -29,9 +30,12 @@ const Banner = () => {
                 <h2>Men Collections</h2>
                 <h1>Get Up to 50% Off Select Styles.</h1>
                 <Link to="/shop">
-                <button type="button" className="mt-4 btn pt-3 pb-3 pr-6 pl-6">
-                  Shop Now
-                </button>
+                  <button
+                    type="button"
+                    className="mt-4 btn pt-3 pb-3 pr-6 pl-6"
+                  >
+                    Shop Now
+                  </button>
                 </Link>
               </div>
             </div>
@@ -46,12 +50,14 @@ const Banner = () => {
                 alt="womenmenaccessories"
                 className="w-full overflow-hidden transition-transform transform hover:scale-110 duration-700"
               />
-              <button
-                type="button"
-                className="mt-4 btn pt-3 pb-3 pr-6 pl-6 text-white absolute top-1/2 left-1/2 translate"
-              >
-                {val.name}
-              </button>
+              <Link to={`/shop?category=${val.name}`}>
+                <button
+                  type="button"
+                  className="mt-4 btn pt-3 pb-3 pr-6 pl-6 text-white absolute top-1/2 left-1/2 translate"
+                >
+                  {val.name}
+                </button>
+              </Link>
             </div>
           ))}
         </div>

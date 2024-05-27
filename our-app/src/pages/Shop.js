@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { feateures } from "../data/Data";
 import { BiCart, BiHeart } from "react-icons/bi";
 import { Model } from "../common/Model";
@@ -8,6 +9,16 @@ const Shop = () => {
   const [isModalOpen, setIsModalOpen] = useState(null);
   const [category, setCategory] = useState("Womens");
   const { favorites, toggleFavorite } = useFavorites();
+  const location = useLocation();
+
+  // Update category based on URL query parameters
+  useEffect(() => {
+    const searchParams = new URLSearchParams(location.search);
+    const categoryParam = searchParams.get("category");
+    if (categoryParam) {
+      setCategory(categoryParam);
+    }
+  }, [location.search]);
 
   const handleOpen = (productid) => {
     setIsModalOpen(productid);
