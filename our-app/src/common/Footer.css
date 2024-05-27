@@ -1,0 +1,70 @@
+.footer {
+    background-color: rgb(17, 24, 39);
+    color: #a0aec0;
+    padding: 3.5rem 0;
+  }
+  
+  .footer-container {
+    width: 83.333333%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-section {
+    width: 22%;
+    margin-bottom: 2rem;
+  }
+  
+  .footer-logo {
+    width: 10rem; /* Increased the width of the logo */
+    margin-bottom: 1.25rem;
+  }
+  
+  .footer-section h3 {
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-section p,
+  .footer-section ul {
+    font-size: 0.875rem;
+    line-height: 1.75;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-section ul li a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #fff;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid #2d3748;
+    padding-top: 1.5rem;
+    text-align: center;
+  }
+  
+  .footer-bottom p {
+    font-size: 0.875rem;
+  }
+  

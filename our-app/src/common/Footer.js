@@ -1,37 +1,50 @@
 import React from "react";
-import { footer } from "../data/Data";
 import logo from "../logo/logo-w.png";
 import { Link } from "react-router-dom";
+import './Footer.css';
 
 const Footer = () => {
   return (
-    <div className="bg-gray-900">
-      <div className="w-10/12 m-auto">
-        <div className="flex justify-between pt-14 pb-14">
-          <div className="text-gray-500 w-1/4">
-            <Link to="/">
-              <div className="mb-5">
-                <img src={logo} alt="logo" />
-              </div>
-            </Link>
-            <p>
-              Contact Us: Have questions or need assistance? Reach out to our
-              friendly customer service team here. Shipping & Returns: Learn
-              about our fast shipping options and easy return policy here. FAQ:
-              Find answers to common questions here.
-            </p>
-          </div>
-          {footer.map((val, index) => (
-            <div className="text-gray-500" key={index}>
-              <h1 className="text-2xl mb-5 text-white">{val.header}</h1>
-              <p className="mt-200">{val.content2}</p>
-              <p>{val.content3}</p>
-              <p>{val.content4}</p>
-            </div>
-          ))}
+    <footer className="footer">
+      <div className="footer-container">
+        <div className="footer-section">
+          <Link to="/">
+            <img src={logo} alt="logo" className="footer-logo" />
+          </Link>
+          <p>
+            Discover the latest in men's and women's fashion, shoes, and accessories. Shop our wide range of high-quality products and stay stylish.
+          </p>
+        </div>
+        <div className="footer-section">
+          <h3>Customer Service</h3>
+          <ul>
+            <li><Link to="/contact">Contact Us</Link></li>
+            <li>Shipping & Returns</li>
+            <li>FAQ</li>
+          </ul>
+        </div>
+        <div className="footer-section">
+          <h3>Information</h3>
+          <ul>
+            <li><Link to="/about">About Us</Link></li>
+            <li><Link to="/privacy-policy">Privacy Policy</Link></li>
+            <li><Link to="/terms-conditions">Terms & Conditions</Link></li>
+          </ul>
+        </div>
+        <div className="footer-section">
+          <h3>Follow Us</h3>
+          <ul className="social-links">
+            <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+            <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+            <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          </ul>
         </div>
       </div>
-    </div>
+      <div className="footer-bottom">
+        <p>&copy; {new Date().getFullYear()} Fashion Frontier. All rights reserved.</p>
+      </div>
+    </footer>
   );
 };
 
