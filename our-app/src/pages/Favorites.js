@@ -54,7 +54,7 @@ const Favorites = () => {
                     <BiHeart
                       className={`text-2xl ${
                         favorites.includes(product.id)
-                          ? "text-red-500"
+                          ? "text-red-600"
                           : "text-gray-500"
                       }`}
                     />

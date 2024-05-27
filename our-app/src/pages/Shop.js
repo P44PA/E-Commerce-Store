@@ -76,7 +76,7 @@ const Shop = () => {
                     <BiHeart
                       className={`text-2xl ${
                         favorites.includes(val.id)
-                          ? "text-red-500"
+                          ? "text-red-600"
                           : "text-gray-500"
                       }`}
                     />
