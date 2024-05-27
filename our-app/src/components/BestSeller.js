@@ -4,6 +4,7 @@ import { feateures } from "../data/Data";
 import { Heading } from "../common/Heading";
 import { BiCart, BiHeart } from "react-icons/bi";
 import { Model } from "../common/Model";
+import { useFavorites } from "../pages/FavoritesContext";
 
 export const BestSeller = () => {
   var settings = {
@@ -17,6 +18,7 @@ export const BestSeller = () => {
   };
 
   const [isModalOpen, setIsModalOpen] = useState(null);
+  const { favorites, toggleFavorite } = useFavorites();
 
   const handleOpen = (productid) => {
     setIsModalOpen(productid);
@@ -64,9 +66,13 @@ export const BestSeller = () => {
                       {val.tag}
                     </p>
                   </div>
-                  <div className="hidden absolute bg-white top-0 right-0 p-4 m-4">
+                  <div className="hidden absolute bg-white top-0 right-0 p-4 m-4" onClick={() => toggleFavorite(val.id)}>
                     <div>
-                      <BiHeart />
+                      <BiHeart className={`text-2xl ${
+                        favorites.includes(val.id)
+                          ? "text-red-600"
+                          : "text-gray-500"
+                      }`} />
                     </div>
                   </div>
                 </div>
