@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { FaTimes } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
 import { getCartTotal, removeItem } from "../redux/cartSlice";
+import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 
 const Sidebar = ({ isSidebarOpen, closeSidebar }) => {
   const dispatch = useDispatch();
@@ -13,6 +14,13 @@ const Sidebar = ({ isSidebarOpen, closeSidebar }) => {
 
   const removeItemFromCart = (itemId, itemSize) => {
     dispatch(removeItem({ id: itemId, size: itemSize }));
+  };
+  const handleApprove = (data, actions) => {
+    return actions.order.capture().then((details) => {
+      // Handle the successful transaction here
+      console.log("Transaction completed by ", details.payer.name.given_name);
+      // You can redirect to a success page or show a success message
+    });
   };
 
   return (
@@ -88,6 +96,25 @@ const Sidebar = ({ isSidebarOpen, closeSidebar }) => {
                   <h2>
                     Sub Total: $<span>{totalAmount}</span>
                   </h2>
+                </div>
+                <div className="mt-4">
+                  <PayPalScriptProvider options={{ "client-id": "AWmT1Jvje2nRcycvEPNHLuBfsv3TIPkAGWFY5KzzMyF0toQ18MeGhPnxeCemYbXBwoUnvs6hvY8rZFMi" }}>
+                  <PayPalButtons
+                    style={{ layout: "vertical" }}
+                    createOrder={(data, actions) => {
+                      return actions.order.create({
+                        purchase_units: [
+                          {
+                            amount: {
+                              value: totalAmount.toString(),
+                            },
+                          },
+                        ],
+                      });
+                    }}
+                    onApprove={handleApprove}
+                  />
+                </PayPalScriptProvider>
                 </div>
               </>
             )}
