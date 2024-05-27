@@ -6,6 +6,7 @@ import { FavoritesProvider } from "./FavoritesContext";
 import NotFoundPage from "./NotFoundPage";
 import Header from "./../common/Header";
 import Footer from "./../common/Footer";
+import About from "./About";
 
 export {
   Home,
@@ -16,4 +17,5 @@ export {
   Contact,
   NotFoundPage,
   FavoritesProvider,
+  About,
 };
