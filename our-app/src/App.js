@@ -9,8 +9,8 @@ import {
   NotFoundPage,
   About,
 } from "./pages/index";
-import Favorites from "./pages/Favorites"; // Import the Favorites page
-import { FavoritesProvider } from "./pages/FavoritesContext"; // Adjust the import path
+import Favorites from "./pages/Favorites";
+import { FavoritesProvider } from "./pages/FavoritesContext";
 
 function App() {
   return (
@@ -25,7 +25,6 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
             <Route path="/favorites" element={<Favorites />} />{" "}
-            {/* Add the new route */}
             <Route path="/*" element={<NotFoundPage />} />
           </Routes>
           <Footer />

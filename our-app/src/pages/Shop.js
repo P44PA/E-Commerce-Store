@@ -2,13 +2,12 @@ import React, { useState } from "react";
 import { feateures } from "../data/Data";
 import { BiCart, BiHeart } from "react-icons/bi";
 import { Model } from "../common/Model";
-import PageHeading from "../common/PageHeading";
-import { useFavorites } from "./FavoritesContext"; // Import the useFavorites hook
+import { useFavorites } from "./FavoritesContext";
 
 const Shop = () => {
   const [isModalOpen, setIsModalOpen] = useState(null);
-  const [category, setCategory] = useState("Womens"); // Default category
-  const { favorites, toggleFavorite } = useFavorites(); // Use favorites context
+  const [category, setCategory] = useState("Womens");
+  const { favorites, toggleFavorite } = useFavorites();
 
   const handleOpen = (productid) => {
     setIsModalOpen(productid);
@@ -24,7 +23,6 @@ const Shop = () => {
 
   return (
     <div>
-      {/* <PageHeading home={"Home"} pagename={"Shop"} /> */}
       <div className="w-10/12 m-auto">
         <div className="flex justify-center mb-8">
           <div style={{ marginRight: "20px" }}>
@@ -77,7 +75,7 @@ const Shop = () => {
                   </div>
                   <div
                     className="absolute top-0 right-0 p-4 m-4 cursor-pointer"
-                    onClick={() => toggleFavorite(val.id)} // Use the toggleFavorite from context
+                    onClick={() => toggleFavorite(val.id)}
                   >
                     <BiHeart
                       className={`text-2xl ${

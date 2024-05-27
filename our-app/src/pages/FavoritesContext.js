@@ -1,9 +1,7 @@
 import React, { createContext, useContext, useState } from "react";
 
-// Create a Context for the favorites
 const FavoritesContext = createContext();
 
-// Create a provider component
 export const FavoritesProvider = ({ children }) => {
   const [favorites, setFavorites] = useState([]);
 
@@ -24,7 +22,6 @@ export const FavoritesProvider = ({ children }) => {
   );
 };
 
-// Create a custom hook to use the FavoritesContext
 export const useFavorites = () => {
   return useContext(FavoritesContext);
 };
