@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import { Heading } from "../common/Heading";
 import { blogs } from "../data/Data";
+import {Link } from 'react-router-dom'
 
 export const Blog = () => {
   var settings = {
@@ -42,8 +43,12 @@ export const Blog = () => {
                 </div>
                 <div className="product-details text-center mt-4 mb-4">
                   <p className="mb-2">{val.short_description}</p>
-                  <p className="mb-2">{val.title}</p>
-                  <p className="text-red-600 text-xl">{val.read_more}</p>
+                  <Link to={'/shop'}>
+                  <button>{val.title} Now</button> <br></br>
+                  </Link>
+                  {/* <p className="mb-2">{val.title}</p> */}
+                  {/* <p className="text-red-600 text-xl">{val.read_more}</p> */}
+                  <a href="https://fashionjackson.com/" className="text-red-600 text-xl" target="blank">{val.read_more}</a>
                 </div>
               </div>
             </div>

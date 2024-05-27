@@ -325,7 +325,7 @@ export const blogs = [
     img: "../images/10-home_default.jpg",
     tag: fulltag,
     title: "Shop",
-    short_description: "Lorem ipsum dolor",
+    short_description: "Latest Blogs",
     read_more: "Read More",
   },
   {
@@ -333,7 +333,7 @@ export const blogs = [
     img: "../images/11-home_default.jpg",
     tag: fulltag,
     title: "Shop",
-    short_description: "Lorem ipsum dolor",
+    short_description: "Latest Blogs",
     read_more: "Read More",
   },
   {
@@ -341,7 +341,7 @@ export const blogs = [
     img: "../images/12-home_default.jpg",
     tag: fulltag,
     title: "Shop",
-    short_description: "Lorem ipsum dolor",
+    short_description: "Latest Blogs",
     read_more: "Read More",
   },
   {
@@ -349,7 +349,7 @@ export const blogs = [
     img: "../images/13-home_default.jpg",
     tag: fulltag,
     title: "Shop",
-    short_description: "Lorem ipsum dolor",
+    short_description: "Latest Blogs",
     read_more: "Read More",
   },
   {
@@ -357,7 +357,7 @@ export const blogs = [
     img: "../images/kurti.jpg",
     tag: fulltag,
     title: "Shop",
-    short_description: "Lorem ipsum dolor",
+    short_description: "Latest Blogs",
     read_more: "Read More",
   },
   {
@@ -365,7 +365,7 @@ export const blogs = [
     img: "../images/14-home_default.jpg",
     tag: fulltag,
     title: "Shop",
-    short_description: "Lorem ipsum dolor",
+    short_description: "Latest Blogs",
     read_more: "Read More",
   },
 ];
