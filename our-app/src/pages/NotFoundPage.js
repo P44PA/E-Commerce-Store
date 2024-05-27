@@ -5,8 +5,8 @@ const NotFoundPage = () => {
   return (
     <div>
       <PageHeading home={"Home"} pagename={"Page Not Found"} />
-      <div className="text-center text-4xl font-extrabold m-10">
-        Page Not Found
+      <div className="flex justify-center items-center m-10 ">
+            <img src="./images/logo.png" alt="logo"  width={500} height={500} />
       </div>
     </div>
   );
