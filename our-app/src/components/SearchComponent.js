@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { BiSearch } from "react-icons/bi";
+import { feateures } from "../data/Data";
 
 const SearchComponent = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -18,7 +19,17 @@ const SearchComponent = () => {
 
   const handleSearchSubmit = (e) => {
     e.preventDefault();
-    navigate(`/shop?search=${searchInput}`);
+
+    const product = feateures.find(
+      (product) =>
+        product.title.toLowerCase() === searchInput.toLowerCase()
+    );
+
+    if (product) {
+      navigate(`/shop?category=${product.category}&search=${searchInput}`);
+    } else {
+      navigate(`/shop?search=${searchInput}`);
+    }
   };
 
   const handleClickOutside = (event) => {
@@ -36,7 +47,10 @@ const SearchComponent = () => {
 
   return (
     <div className="relative" ref={searchRef}>
-      <form onSubmit={handleSearchSubmit} className={`absolute right-0 ${isSearchOpen ? "" : "hidden"}`}>
+      <form
+        onSubmit={handleSearchSubmit}
+        className={`absolute right-0 ${isSearchOpen ? "" : "hidden"}`}
+      >
         <input
           type="text"
           value={searchInput}

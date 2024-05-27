@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { feateures } from "../data/Data";
 import { BiCart, BiHeart } from "react-icons/bi";
 import { Model } from "../common/Model";
@@ -8,16 +8,32 @@ import { useFavorites } from "./FavoritesContext";
 const Shop = () => {
   const [isModalOpen, setIsModalOpen] = useState(null);
   const [category, setCategory] = useState("Womens");
+  const [filteredProducts, setFilteredProducts] = useState([]);
   const { favorites, toggleFavorite } = useFavorites();
   const location = useLocation();
+  const navigate = useNavigate();
 
-  // Update category based on URL query parameters
   useEffect(() => {
     const searchParams = new URLSearchParams(location.search);
     const categoryParam = searchParams.get("category");
+    const searchParam = searchParams.get("search");
+
     if (categoryParam) {
       setCategory(categoryParam);
     }
+
+    let filtered = feateures;
+    if (categoryParam) {
+      filtered = filtered.filter((product) => product.category === categoryParam);
+    }
+
+    if (searchParam) {
+      filtered = filtered.filter((product) =>
+        product.title.toLowerCase().includes(searchParam.toLowerCase())
+      );
+    }
+
+    setFilteredProducts(filtered);
   }, [location.search]);
 
   const handleOpen = (productid) => {
@@ -28,9 +44,12 @@ const Shop = () => {
     setIsModalOpen(null);
   };
 
-  const filteredProducts = feateures.filter(
-    (product) => product.category === category
-  );
+  const handleCategoryChange = (newCategory) => {
+    setCategory(newCategory);
+    const searchParams = new URLSearchParams(location.search);
+    searchParams.set("category", newCategory);
+    navigate(`/shop?${searchParams.toString()}`);
+  };
 
   return (
     <div>
@@ -43,7 +62,7 @@ const Shop = () => {
                   ? "bg-blue-500 text-white"
                   : "bg-gray-100 text-gray-600"
               }`}
-              onClick={() => setCategory("Womens")}
+              onClick={() => handleCategoryChange("Womens")}
             >
               Womens
             </button>
@@ -54,7 +73,7 @@ const Shop = () => {
                 ? "bg-blue-500 text-white"
                 : "bg-gray-100 text-gray-600"
             }`}
-            onClick={() => setCategory("Mens")}
+            onClick={() => handleCategoryChange("Mens")}
           >
             Mens
           </button>
