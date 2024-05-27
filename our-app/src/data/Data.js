@@ -1,14 +1,24 @@
 import { IoStar } from "react-icons/io5";
 
-const today = new Date
-const today_date = today.getDate()
-const month = today.getMonth()
+const today = new Date();
+const today_date = today.getDate();
+const month = today.getMonth();
 const monthNames = [
-  'January', 'February', 'March', 'April', 'May', 'June',
-  'July', 'August', 'September', 'October', 'November', 'December'
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
 ];
 
-const fulltag = `${today_date}  ${monthNames[month]}`
+const fulltag = `${today_date}  ${monthNames[month]}`;
 
 export const navbar = [
   {

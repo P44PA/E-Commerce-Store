@@ -27,17 +27,23 @@ const Shop = () => {
       {/* <PageHeading home={"Home"} pagename={"Shop"} /> */}
       <div className="w-10/12 m-auto">
         <div className="flex justify-center mb-8">
+          <div style={{ marginRight: "20px" }}>
+            <button
+              className={`mx-2 bg-gray-300 px-6 py-3 rounded-full font-semibold w-24 ${
+                category === "Womens"
+                  ? "bg-blue-500 text-white"
+                  : "bg-gray-100 text-gray-600"
+              }`}
+              onClick={() => setCategory("Womens")}
+            >
+              Womens
+            </button>
+          </div>
           <button
-            className={`mx-2 px-4 py-2 ${
-              category === "Womens" ? "bg-blue-500 text-white" : "bg-gray-200"
-            }`}
-            onClick={() => setCategory("Womens")}
-          >
-            Womens
-          </button>
-          <button
-            className={`mx-2 px-4 py-2 ${
-              category === "Mens" ? "bg-blue-500 text-white" : "bg-gray-200"
+            className={`mx-2 bg-gray-300 px-6 py-3 rounded-full font-semibold w-24 ${
+              category === "Mens"
+                ? "bg-blue-500 text-white"
+                : "bg-gray-100 text-gray-600"
             }`}
             onClick={() => setCategory("Mens")}
           >
