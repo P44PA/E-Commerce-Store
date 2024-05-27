@@ -14,9 +14,15 @@ const Favorites = () => {
 
   return (
     <div className="w-10/12 m-auto">
-      <h2 className="text-2xl my-4">Your Favorites</h2>
+      <h2 className="text-4xl my-4 text-center text-red-600" >Your Favorites</h2>
       {favoriteProducts.length === 0 ? (
-        <p>You have no favorite items.</p>
+        
+        <div className="flex justify-center items-center m-10">
+        {/* <img src="https://img.freepik.com/premium-vector/nothing-here-flat-illustration_418302-77.jpg" width={400} height={400}></img> */}
+        <img src="../images\NothinHere.png" className="flex justify-center items-center m-10" width={400} height={400}></img>
+        {/* <p className="">You have no favorite items.</p> */}
+        </div>
+       
       ) : (
         <div className="grid grid-cols-4 gap-8">
           {favoriteProducts.map((product) => (
