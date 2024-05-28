@@ -29,25 +29,32 @@ const Footer = () => {
           <ul>
             <li><Link to="/about">About Us</Link></li>
             <li><Link to="/privacy-policy">Privacy Policy</Link></li>
-            <li><Link to="/terms-conditions">Terms & Conditions</Link></li>
+            <li><Link to="/Termsandconditions">Terms & Conditions</Link></li>
           </ul>
         </div>
         <div className="footer-section">
           <h3>Follow Us</h3>
           <ul className="social-links">
-            
-            <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><Link className="mr-6 text-xl text-white">
-          <FaFacebook />
-        </Link></a></li>
-            <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer"> <Link className="mr-6 text-xl text-white">
-          <FaInstagram />
-        </Link></a></li>
-            <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><Link className="mr-6 text-xl text-white">
-          <FaLinkedin />
-        </Link></a></li>
-            <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><Link className="mr-6 text-xl text-white">
-          <FaTwitter />
-        </Link></a></li>
+            <li>
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="mr-6 text-xl text-white">
+                <FaFacebook />
+              </a>
+            </li>
+            <li>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="mr-6 text-xl text-white">
+                <FaInstagram />
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="mr-6 text-xl text-white">
+                <FaTwitter />
+              </a>
+            </li>
+            <li>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="mr-6 text-xl text-white">
+                <FaLinkedin />
+              </a>
+            </li>
           </ul>
         </div>
       </div>

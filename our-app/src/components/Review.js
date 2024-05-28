@@ -1,9 +1,21 @@
 import React from "react";
 import Slider from "react-slick";
 import { reviews } from "../data/Data";
+import { BiChevronRight, BiChevronLeft } from "react-icons/bi";
+
 
 export const Review = () => {
-  const settings = [];
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    nextArrow: <BiChevronRight />,
+    prevArrow: <BiChevronLeft />,
+   };
   return (
     <div className="bg-image">
       <div className="bg-image-overlay"></div>

@@ -7,7 +7,7 @@ import { useFavorites } from "./FavoritesContext";
 
 const Shop = () => {
   const [isModalOpen, setIsModalOpen] = useState(null);
-  const [category, setCategory] = useState("Womens");
+  const [category, setCategory] = useState("");
   const [filteredProducts, setFilteredProducts] = useState([]);
   const { favorites, toggleFavorite } = useFavorites();
   const location = useLocation();
