@@ -302,6 +302,48 @@ export const feateures = [
     description:
       "Elevate your style with this sharp and sophisticated plaid blazer. Perfect for formal events, work meetings, or adding a touch of polish to any outfit.",
   },
+  {
+    id: 11,
+    img: "../images/stylishMan.webp",
+    tag: "new",
+    btn: "Select Options",
+    category: "Mens",
+    title: "Stylish Plaid Blazer",
+    short_description:
+      "Sharp and sophisticated plaid blazer for a polished look.",
+    rating: Array(5).fill({ icon: <IoStar /> }),
+    price: "149.99",
+    description:
+      "Elevate your style with this sharp and sophisticated plaid blazer. Perfect for formal events, work meetings, or adding a touch of polish to any outfit.",
+  },
+  {
+    id: 11,
+    img: "../images/stylishMan.webp",
+    tag: "new",
+    btn: "Select Options",
+    category: "Mens",
+    title: "Stylish Plaid Blazer",
+    short_description:
+      "Sharp and sophisticated plaid blazer for a polished look.",
+    rating: Array(5).fill({ icon: <IoStar /> }),
+    price: "149.99",
+    description:
+      "Elevate your style with this sharp and sophisticated plaid blazer. Perfect for formal events, work meetings, or adding a touch of polish to any outfit.",
+  },
+  {
+    id: 11,
+    img: "../images/stylishMan.webp",
+    tag: "new",
+    btn: "Select Options",
+    category: "Mens",
+    title: "Stylish Plaid Blazer",
+    short_description:
+      "Sharp and sophisticated plaid blazer for a polished look.",
+    rating: Array(5).fill({ icon: <IoStar /> }),
+    price: "149.99",
+    description:
+      "Elevate your style with this sharp and sophisticated plaid blazer. Perfect for formal events, work meetings, or adding a touch of polish to any outfit.",
+  },
 
   //   id: 12,
   //   img: "../images/democracyMan.jpg",
