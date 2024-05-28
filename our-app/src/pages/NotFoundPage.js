@@ -4,9 +4,10 @@ import PageHeading from "../common/PageHeading";
 const NotFoundPage = () => {
   return (
     <div>
-      <PageHeading home={"Home"} pagename={"Page Not Found"} />
+      <PageHeading home={"404"} pagename={"Page Not Found"} />
       <div className="flex justify-center items-center m-10 ">
-            <img src="./images/logo.png" alt="logo"  width={500} height={500} />
+            <img src="./images/NothinHere.png" alt="logo"   />
+
       </div>
     </div>
   );
