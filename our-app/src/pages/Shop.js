@@ -24,7 +24,9 @@ const Shop = () => {
 
     let filtered = feateures;
     if (categoryParam) {
-      filtered = filtered.filter((product) => product.category === categoryParam);
+      filtered = filtered.filter(
+        (product) => product.category === categoryParam
+      );
     }
 
     if (searchParam) {
@@ -59,8 +61,8 @@ const Shop = () => {
             <button
               className={`mx-2 bg-gray-300 px-6 py-3 rounded-full font-semibold w-24 ${
                 category === "Womens"
-                  ? "bg-blue-500 text-white"
-                  : "bg-gray-100 text-gray-600"
+                  ? "bg-blue-500 text-gray-600"
+                  : "bg-gray-100 text-white"
               }`}
               onClick={() => handleCategoryChange("Womens")}
             >
@@ -70,8 +72,8 @@ const Shop = () => {
           <button
             className={`mx-2 bg-gray-300 px-6 py-3 rounded-full font-semibold w-24 ${
               category === "Mens"
-                ? "bg-blue-500 text-white"
-                : "bg-gray-100 text-gray-600"
+                ? "bg-blue-500 text-gray-600"
+                : "bg-gray-100 text-white"
             }`}
             onClick={() => handleCategoryChange("Mens")}
           >
