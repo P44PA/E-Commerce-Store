@@ -8,8 +8,10 @@ import {
   Contact,
   NotFoundPage,
   About,
+  
 } from "./pages/index";
 import Favorites from "./pages/Favorites";
+import TermsAndConditions from "./pages/Termsandconditions";
 import { FavoritesProvider } from "./pages/FavoritesContext";
 
 function App() {
@@ -26,6 +28,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/favorites" element={<Favorites />} />{" "}
             <Route path="/*" element={<NotFoundPage />} />
+            <Route path="/Termsandconditions" element={<TermsAndConditions />} />{" "}
           </Routes>
           <Footer />
         </FavoritesProvider>
