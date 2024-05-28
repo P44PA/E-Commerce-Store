@@ -41,13 +41,17 @@ export const Model = ({ isModalOpen, data, handleClose }) => {
   const increaseQuantity = (itemId, currentQuantity) => {
     const newQty = currentQuantity + 1;
     setQty(newQty);
-    dispatch(updateQuantity({ id: itemId, quantity: newQty, size: selectedSize }));
+    dispatch(
+      updateQuantity({ id: itemId, quantity: newQty, size: selectedSize })
+    );
   };
 
   const decreaseQuantity = (itemId, currentQuantity) => {
     const newQty = Math.max(currentQuantity - 1, 1);
     setQty(newQty);
-    dispatch(updateQuantity({ id: itemId, quantity: newQty, size: selectedSize }));
+    dispatch(
+      updateQuantity({ id: itemId, quantity: newQty, size: selectedSize })
+    );
   };
 
   const handleSizeSelect = (size) => {
@@ -72,6 +76,8 @@ export const Model = ({ isModalOpen, data, handleClose }) => {
                     <img
                       src={data.img}
                       alt={data.title}
+                      height={467}
+                      width={350}
                       className="max-w-none"
                     />
                   </div>
@@ -98,23 +104,27 @@ export const Model = ({ isModalOpen, data, handleClose }) => {
                   <div className="flex items-center">
                     <p className="font-semibold">Size: </p>
                     <div className="size-btn mt-4 mb-4">
-                      {["Small", "Medium", "Large", "Extra Large"].map((size) => (
-                        <button
-                          key={size}
-                          className={`ml-2 btn pt-1 pb-1 pr-3 pl-3 ${
-                            selectedSize === size ? "bg-blue-500 text-white" : ""
-                          }`}
-                          onClick={() => handleSizeSelect(size)}
-                        >
-                          {size}
-                        </button>
-                      ))}
+                      {["Small", "Medium", "Large", "Extra Large"].map(
+                        (size) => (
+                          <button
+                            key={size}
+                            className={`ml-2 btn pt-1 pb-1 pr-3 pl-3 ${
+                              selectedSize === size
+                                ? "bg-blue-500 text-white"
+                                : ""
+                            }`}
+                            onClick={() => handleSizeSelect(size)}
+                          >
+                            {size}
+                          </button>
+                        )
+                      )}
                     </div>
                   </div>
                   <p className="text-green-700">In Stock 300 Items</p>
                   <div className="flex items-center">
                     <div className="flex mr-3">
-                    <button
+                      <button
                         className="border mt-4 pt-3 pb-3 pr-6 pl-6"
                         onClick={() => decreaseQuantity(data.id, qty)}
                       >
