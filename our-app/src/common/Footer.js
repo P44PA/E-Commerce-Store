@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../logo/logo-w.png";
 import { Link } from "react-router-dom";
 import './Footer.css';
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -34,10 +35,19 @@ const Footer = () => {
         <div className="footer-section">
           <h3>Follow Us</h3>
           <ul className="social-links">
-            <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-            <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-            <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a></li>
-            <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            
+            <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><Link className="mr-6 text-xl text-white">
+          <FaFacebook />
+        </Link></a></li>
+            <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer"> <Link className="mr-6 text-xl text-white">
+          <FaInstagram />
+        </Link></a></li>
+            <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><Link className="mr-6 text-xl text-white">
+          <FaLinkedin />
+        </Link></a></li>
+            <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><Link className="mr-6 text-xl text-white">
+          <FaTwitter />
+        </Link></a></li>
           </ul>
         </div>
       </div>
