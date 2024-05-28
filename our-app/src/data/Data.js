@@ -75,6 +75,48 @@ export const bannar_down = [
   },
 ];
 
+export const home = [
+  {
+    id: 1,
+    img: "../images/pink1.jpg",
+    tag: "new",
+    btn: "Select Options",
+    category: "Womens",
+    title: "Elegant Pink Dress",
+    short_description: "Beautiful pink dress for special occasions.",
+    rating: Array(5).fill({ icon: <IoStar /> }),
+    price: "129.00",
+    description:
+      "Feel elegant and glamorous in this beautiful pink dress. Perfect for weddings, parties, or any special occasion.",
+  },
+  {
+    id: 2,
+    img: "../images/top_jeans_side.jpg",
+    tag: "new",
+    btn: "Select Options",
+    category: "Kids",
+    title: "Stylish Kids Top and Jeans Set",
+    short_description: "Trendy top and jeans set for kids.",
+    rating: Array(5).fill({ icon: <IoStar /> }),
+    price: "129.00",
+    description:
+      "Keep your little ones stylish with this trendy top and jeans set. Perfect for casual outings and playdates.",
+  },
+  {
+    id: 3,
+    img: "../images/white_back.jpg",
+    tag: "new",
+    btn: "Select Options",
+    category: "Womens",
+    title: "White Button-Up Blouse",
+    short_description: "Classic white blouse for a sophisticated look.",
+    rating: Array(5).fill({ icon: <IoStar /> }),
+    price: "59.99",
+    description:
+      "Achieve a timeless and sophisticated look with this classic white button-up blouse. Made from high-quality fabric for maximum comfort.",
+  },
+];
+
 export const feateures = [
   {
     id: 1,
