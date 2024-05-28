@@ -80,7 +80,8 @@ const Shop = () => {
             Mens
           </button>
         </div>
-        <div className="grid grid-cols-4 gap-8">
+        {filteredProducts.length > 0 ? (
+          <div className="grid grid-cols-4 gap-8">
           {filteredProducts.map((val, key) => (
             <div className="features flex gap-8 mt-8" key={key}>
               <div className="overflow-hidden relative m-2">
@@ -133,8 +134,19 @@ const Shop = () => {
             </div>
           ))}
         </div>
+      ) : (
+          <div className="flex flex-col items-center justify-center m-10">
+            <p className="text-xl text-gray-600 mb-4">No products found.</p>
+            <img
+              src="../images/NothinHere.png"
+              width={400}
+              height={400}
+              alt="nothing"
+            />
+          </div>
+        )}
       </div>
-
+        
       <Model
         isModalOpen={isModalOpen !== null}
         data={feateures.find((feature) => feature.id === isModalOpen)}
